@@ -1,5 +1,5 @@
-#!/usr/bin/env bash
-
+# /usr/bin/env bash
+#! /bin/bash
 export instance_id="$(curl -s http://metadata.google.internal/computeMetadata/v1/instance/id -H Metadata-Flavor:Google)"
 
 export local_ipv4="$(curl -s http://metadata.google.internal/computeMetadata/v1/instance/network-interfaces/0/ip -H Metadata-Flavor:Google)"
