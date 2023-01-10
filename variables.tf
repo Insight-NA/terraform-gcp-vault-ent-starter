@@ -107,7 +107,7 @@ variable "vault_license_filepath" {
 
 variable "vault_version" {
   type        = string
-  default     = "1.11.0"
+  default     = "1.12.2"
   description = "Vault version"
 }
 
