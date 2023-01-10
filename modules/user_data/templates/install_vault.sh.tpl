@@ -1,4 +1,4 @@
-# /usr/bin/env bash
+#! /usr/bin/env bash
 
 export instance_id="$(curl -s http://metadata.google.internal/computeMetadata/v1/instance/id -H Metadata-Flavor:Google)"
 
