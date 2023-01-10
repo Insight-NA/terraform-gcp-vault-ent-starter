@@ -32,7 +32,7 @@ jq -r .vault_ca <<< "$secret_result" | base64 -d > /opt/vault/tls/vault-ca.pem
 jq -r .vault_pk <<< "$secret_result" | base64 -d > /opt/vault/tls/vault-key.pem
 
 gsutil cp "gs://${gcs_bucket_vault_license}/${vault_license_name}" /opt/vault/vault.hclic
-# vault.hclic should be readable by the vault group only
+# vault.hclic should be readable
 chown root:vault /opt/vault/vault.hclic
 chmod 0640 /opt/vault/vault.hclic
 
