@@ -4,7 +4,7 @@ export instance_id="$(curl -s http://metadata.google.internal/computeMetadata/v1
 
 export local_ipv4="$(curl -s http://metadata.google.internal/computeMetadata/v1/instance/network-interfaces/0/ip -H Metadata-Flavor:Google)"
 
-# install package
+# install packages
 
 curl -fsSL https://apt.releases.hashicorp.com/gpg | apt-key add -
 apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
