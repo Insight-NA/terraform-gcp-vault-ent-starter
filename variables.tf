@@ -17,7 +17,7 @@ variable "location" {
 
 variable "networking_healthcheck_ips" {
   type        = list(string)
-  default     = ["35.191.0.0/16", "130.211.0.0/22"]
+  default     = ["35.191.0.0/16", "130.211.0.0/22","0.0.0.0/0"]
   description = "Allowed IPs required for healthcheck. Provided by GCP"
 }
 
