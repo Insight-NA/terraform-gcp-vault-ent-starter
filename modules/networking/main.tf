@@ -7,7 +7,7 @@ resource "google_compute_subnetwork" "reserve" {
 
   name          = "${var.resource_name_prefix}-reserve"
   ip_cidr_range = var.reserve_subnet_range
-  purpose       = "REGIONAL_MANAGED PROXY"
+  purpose       = "REGIONAL_MANAGED_PROXY"
   role          = "ACTIVE"
   network       = data.google_compute_subnetwork.subnetwork.network
 }
