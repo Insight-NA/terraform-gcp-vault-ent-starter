@@ -23,7 +23,7 @@ variable "networking_healthcheck_ips" {
 
 variable "node_count" {
   type        = number
-  default     = 5
+  default     = 3
   description = "Number of Vault nodes to deploy"
 }
 
@@ -114,7 +114,7 @@ variable "vault_version" {
 # VM VARS
 variable "vm_machine_type" {
   type        = string
-  default     = "n2-standard-4"
+  default     = "n2-standard-2"
   description = "VM Machine Type"
 }
 
