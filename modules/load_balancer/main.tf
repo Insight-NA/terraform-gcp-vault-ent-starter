@@ -126,4 +126,5 @@ resource "google_compute_forwarding_rule" "lb-ext" {
   port_range            = 443
   target                = google_compute_region_target_https_proxy.lb-ext.self_link
   network_tier          = "STANDARD"
+  network               = "vault-test-network"
 }
