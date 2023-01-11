@@ -118,6 +118,7 @@ resource "google_compute_region_target_https_proxy" "lb-ext" {
 }
 resource "google_compute_forwarding_rule" "lb-ext" {
   name                  = "${var.resource_name_prefix}-vault-external-lb"
+  region                = "us-east1"
   provider              = google-beta
   ip_address            = google_compute_address.external.address
   ip_protocol           = "TCP"
