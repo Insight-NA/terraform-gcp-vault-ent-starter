@@ -69,7 +69,7 @@ resource "google_compute_address" "external" {
   address_type = "EXTERNAL"
   network_tier = "STANDARD"
   region       = "us-east1"
-  purpose      = "External access to Vault"
+  description  = "External access to Vault"
 }
 
 resource "google_compute_region_health_check" "lb-ext" {
