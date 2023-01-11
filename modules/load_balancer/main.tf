@@ -111,7 +111,7 @@ resource "google_compute_region_url_map" "lb-ext" {
 
 resource "google_compute_region_target_https_proxy" "lb-ext" {
   name             = "${var.resource_name_prefix}-vault-external-lb"
-  region           = "us-east-1"
+  region           = "us-east1"
   ssl_certificates = [var.ssl_certificate_name]
   url_map          = google_compute_region_url_map.lb-ext.self_link
 
