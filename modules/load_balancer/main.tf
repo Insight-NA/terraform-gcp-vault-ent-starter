@@ -123,7 +123,6 @@ resource "google_compute_forwarding_rule" "lb-ext" {
   ip_protocol           = "TCP"
   load_balancing_scheme = "EXTERNAL_MANAGED"
   port_range            = 443
-  subnetwork            = var.subnetwork
   target                = google_compute_region_target_https_proxy.lb-ext.self_link
   network_tier          = "STANDARD"
 }
