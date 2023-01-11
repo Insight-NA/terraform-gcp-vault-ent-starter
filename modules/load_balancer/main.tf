@@ -70,7 +70,6 @@ resource "google_compute_address" "external" {
   network_tier = "STANDARD"
   region       = "us-east1"
   description  = "External access to Vault"
-  purpose      = "GCE_ENDPOINT"
 }
 
 resource "google_compute_region_health_check" "lb-ext" {
